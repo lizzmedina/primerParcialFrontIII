@@ -5,41 +5,74 @@
 }
 
 body {
-  color: white;
-  background-color: #ebebff;
-  font-family: Lato, sans-serif;
+  background-color: #ffffff;
   margin-top: 40px;
   justify-content: center;
 }
-h1 {
-  font-family: Roboto, Verdana, Tahoma, sans-serif;
-  color: #8787ff;
+
+p {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
   text-transform: capitalize;
 }
 
 form {
-  width: 800px;
-  min-height: 50px;
-  background-color: #d0d0d5;
-  padding: 25px;
-  margin: 10px;
+  background-color: rgb(255, 255, 255);
   border-radius: 26px;
   display: flex;
+  flex-direction:colum;
   justify-content: center;
+  margin: 10px;
+  min-height: 50px;
+  padding: 25px;
+  width: 400px;
 }
+
+input {
+  border-color: #b8afa0;
+  border-radius: 5px;
+  border: 4px solid ;
+}
+
 button {
   color: rgb(64, 64, 247);
-  border-style: solid ;
-  border-color: rgb(106, 175, 255);
-  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 0em 1.2em;
 }
+
+.app {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: #0000d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  width: 500px;
+  
+}
+
 .container-card{
-  background-color: rgb(255, 183, 89);
-  font-family: Roboto, Verdana, Tahoma, sans-serif;
-  color: rgb(56, 56, 161);
+  background-color: rgb(23, 0, 87);
+  color: rgb(255, 255, 255);
   display: flexbox;
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
   justify-content: center;
 }
 .error-container{
   color: red;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.dato-card {
+  font-size: 10px;
+  background-color: #0000ff;
+  color: white;
 }

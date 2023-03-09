@@ -22,19 +22,24 @@ function App() {
   }
 }
   return (
-    <div className="App">
-      <h1> ¿ Cuál es tu libro favorito ? </h1>
+    <div className="app">
+      <p> ¿ Cuál es tu libro favorito ? </p>
       <form onSubmit={handlerSubmit}> 
+      <div className='container-form'>
         <input className='nombre-input' type="text" value={info.nombre} onChange={(e)=> setInfo ({...info, nombre: e.target.value})} placeholder='ingresa tú nombre'/>        
         <hr />
         <input className='dato-input' type="text"  value={info.dato} onChange={(e)=> setInfo ({...info, dato: e.target.value})} placeholder='ingresa tú respuesta' />
         <hr />
         <button type="submit">Agregar</button>
+      </div>
+        
       </form>
       <div className='error-container'>
         {err && 'Por favor chequea que la información sea correcta'}
       </div>
-      {show && <Card nombre={info.nombre} dato={info.dato}/>}
+      
+        {show && <Card nombre={info.nombre} dato={info.dato}/>}
+      
   </div>
   );
 }
